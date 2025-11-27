@@ -1,5 +1,4 @@
-# Reddit API
-praw
+# Youtube API
 requests
 
 # AWS SDK for S3, Glue, Athena, Redshift, etc.
