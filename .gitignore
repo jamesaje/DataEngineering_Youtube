@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+env/
+.venv/
+
+# Airflow
+logs/
+airflow.db
+airflow-webserver.pid
+
+# Docker
+*.log
+postgres-data/
+*.pid
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.key
+airflow.env
+secrets.env
+config/config.conf
+reddit*

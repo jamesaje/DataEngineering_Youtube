@@ -1,0 +1,17 @@
+# Reddit API
+praw
+requests
+
+# AWS SDK for S3, Glue, Athena, Redshift, etc.
+boto3
+
+# Data processing / file formats
+pandas
+pyarrow
+
+# Connect directly to Redshift/Postgres from Python if needed
+psycopg2-binary
+
+configparser
+isodate
+s3fs
