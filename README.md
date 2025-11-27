@@ -11,12 +11,10 @@ This project demonstrates core data engineering skills using **Airflow, Docker, 
     - likes
     - comments
     - video duration
-
 3. Saves the extracted data as a CSV inside the Airflow container
-4. Uploads the CSV file to Amazon S3
-5. Processes the uploaded file using an AWS Glue job
-6. Writes cleaned, transformed data back to S3
-
+4. Uploads the final dataset to Amazon S3 (partitioned by query & date)
+5. Uses AWS Glue to transform the raw data into a refined/transformed zone
+6. Enables analysis via Athena or downstream tools (e.g. Power BI, QuickSight)
 
 The flow is fully orchestrated using **Apache Airflow (Dockerized).**
 
@@ -47,11 +45,17 @@ The flow is fully orchestrated using **Apache Airflow (Dockerized).**
 
 
 ## Technologies Used
-  * Python
-  * Apache Airflow
-  * Docker / Docker Compose
-  * YouTube Data API v3
-  * AWS S3
-  * AWS Glue
+### Orchestration
+* Apache Airflow
+### Containerization
+* Docker & Docker Compose
+### Cloud
+* AWS S3
+* AWS Glue (ETL job)
+* AWS IAM
+### APIs / Libraries
+* YouTube Data API v3
+* Python (Requests, Pandas)
+* s3fs / boto3
 
 
